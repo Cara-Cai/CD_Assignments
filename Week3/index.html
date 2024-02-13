@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 32px; 
+        }
+
+        #data {
+            font-size: 3em; 
+            text-align: center; 
+        }
+    </style>
+    <title>Web Socket</title>
+</head>
+<body>
+    <p id = "data">Hi</p>
+    <script>
+        const socket = new WebSocket("ws://localhost:1880/testpage")
+        socket.addEventListener("message",handleSocketMessage)
+        function handleSocketMessage(event){
+            console.log(event.data)
+            if(event.data>8000){
+
+            document.getElementById("data").innerHTML="Get closer to me."
+
+             }else if(event.data<8000 && event.data>7000){
+            document.getElementById("data").innerHTML="I like you staying there"
+
+            }else{
+
+                document.getElementById("data").innerHTML="Nah, get away from me"  
+            }
+            // document.body.style.backgroundColor = "rgb(" + event.data*255 + ",0,0)";
+        }
+    </script>
+</body>
+</html>
