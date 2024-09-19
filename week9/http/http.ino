@@ -4,10 +4,10 @@
 #include <Arduino_LSM6DS3.h>
 
 // #define SECRET_SSID "sandbox370"
-// #define SECRET_PASS "+s0a+s03!2gether?"
+// #define SECRET_PASS ""
 
 #define SECRET_SSID "sandbox370"
-#define SECRET_PASS "+s0a+s03!2gether?"
+#define SECRET_PASS ""
 
 ///////please enter your sensitive data in the Secret tab/arduino_secrets.h
 /////// WiFi Settings ///////
