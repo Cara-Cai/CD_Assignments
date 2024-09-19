@@ -7,7 +7,7 @@ MqttClient mqtt(wifi);
 
 //WiFi network info: ssid and password
 const char wifi_ssid[] = "Verizon_R73FLF";
-const char wifi_pass[] = "sleek4-yea-dare";
+const char wifi_pass[] = "";
 
 //MQTT broker info: url and port (1883 default for MQTT)
 const char broker[] = "theyonetwork.cloud.shiftr.io";
