@@ -5,7 +5,7 @@ WiFiUDP udpClient;
 
 //configure your WiFi information inside config.h file
 const char WIFI_SSID[] = "Verizon_R73FLF"; //WiFi network name goes here
-const char WIFI_PASS[] = "sleek4-yea-dare"; //WiFi password goes here
+const char WIFI_PASS[] = ""; //WiFi password goes here
 
 const char server[] = "192.168.1.22"; //local IP address of receiver device goes here
 const int port = 8080; //desired port # goes here. Make sure the receiver is listening on the same port!
